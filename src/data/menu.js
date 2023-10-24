@@ -21,22 +21,22 @@ export const menu = [
 export const socialLinks = [
     {
         name: 'facebook', 
-        icon: <SvgFacebook />, 
+        icon: SvgFacebook, 
         uri: 'https://facebook.com'
     }, 
     {
         name: 'twitter', 
-        icon: <SvgTwitter />, 
+        icon: SvgTwitter, 
         uri: 'https://twitter.com'
     }, 
     {
         name: 'instagram', 
-        icon: <SvgInstagram />, 
+        icon: SvgInstagram, 
         uri: 'https://instagram.com'
     }, 
     {
         name: 'linkedin', 
-        icon: <SvgLinkedin />, 
+        icon: SvgLinkedin, 
         uri: 'https://linkedin.com'
     }, 
 ];
