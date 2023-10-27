@@ -2,11 +2,9 @@ import React from 'react'
 
 const index = () => {
   return (
-    <>
-        <section>
-            <h1>Homepage</h1>
-        </section>
-    </>
+    <section className="container">
+      <h1>Homepage</h1>
+    </section>
   )
 }
 

@@ -13,7 +13,7 @@ const Footer = () => {
                   key={index} 
                   href={item.uri} 
                   target="_blank"
-                  class="social-links--item"
+                  className="social-links--item"
                 >
                   {item.name}
                   <img 

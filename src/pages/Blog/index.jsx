@@ -2,11 +2,9 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <>
-        <section>
-            <h1>Blog</h1>
-        </section>
-    </>
+    <section className="container">
+        <h1>Blog</h1>
+    </section>
   )
 }
 
