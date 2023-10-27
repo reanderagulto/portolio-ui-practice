@@ -1,0 +1,28 @@
+.list-item {
+    &--container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    &--featured-image {
+        img {
+            width: 100%;
+            max-width: 246px;
+        }
+    }
+
+    @media screen and (min-width: 576px) {
+        &--container {
+            flex-direction: row;
+            gap: 18px;
+        }
+
+        &--featured-image {
+            img {
+                height: 180px;
+            }
+        }
+    }
+}
