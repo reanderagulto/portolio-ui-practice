@@ -1,0 +1,39 @@
+.main-footer {
+    &--container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 26px;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+
+        &--item {
+            font-size: 0;
+
+            &__image {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    &--copyright {
+        color: $dark-color;
+        font-size: $font-xxsm;
+        font-weight: $font-regular;
+        font-style: normal;
+        line-height: normal;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+
+}
