@@ -43,7 +43,7 @@ const Header = () => {
               return (
                 <a 
                   key={index}
-                  className="main-header--items__link" 
+                  className="main-header--hamburger__items-link" 
                   href={item.uri}
                 >
                   {item.name}
