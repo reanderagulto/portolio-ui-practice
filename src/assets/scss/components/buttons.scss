@@ -1,0 +1,21 @@
+.btn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 47px;
+    padding: 0 20px;
+    cursor: pointer;
+
+    &-accent {
+        background: #FF6464;
+        color: #FFF;
+        border-radius: 2px;
+    }
+}
+

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListItem = (props) => {
+const ListItem = ({props}) => {
   return (
     <div className="list-item--container">
       {props.image && 
@@ -13,20 +13,9 @@ const ListItem = (props) => {
           {props.title}
         </h3>
         <div className="list-item--subtitle">
-          {props.year && <span class="list-item--date-circular">{props.year}</span>}
+          {props.year && <span className="list-item--date-circular">{props.year}</span>}
           {props.fullDate && <span className="list-item--date-normal">{props.fullDate}</span>}
-          <div className="list-item--categories">
-            {props.categories && props.categories.map((item, index) => {
-              return (
-                <span 
-                  key={index} 
-                  className="list-item--category"
-                >
-                  {item}
-                </span>
-              )
-            })}
-          </div>
+          <div className="list-item--categories">{props.categories.join(', ')}</div>
         </div>
         <p className="list-item--content-snippet">
           {props.snippet}

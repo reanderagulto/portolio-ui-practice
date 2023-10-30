@@ -5,7 +5,15 @@
 @import './includes/variables';
 @import './includes/grid';
 @import './includes/global';
+@import './includes/typography';
 
 // COMPONENTS
 @import './components/header.scss';
 @import './components/footer.scss';
+@import './components/buttons.scss';
+@import './components/list-item.scss';
+
+// PAGES
+@import './pages/homepage.scss';
+@import './pages/blog.scss';
+@import './pages/works.scss';
