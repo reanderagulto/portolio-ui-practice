@@ -1,23 +1,28 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { menu } from '@data/menu';
 import clsx from 'clsx';
 
 const Header = () => {
   const [hamburgerOpen, setHamburger] = useState(0);
+  const [activeLink, setActiveLink] = useState(window.location.pathname);
 
   const openHamburger = (value) => {
     setHamburger(value);
   }
 
+  useEffect(() => {
+    setActiveLink(window.location.pathname);
+  }, []);
+
   return (
-    <header>
+    <header className={clsx(hamburgerOpen === 0 && 'overflow-hidden')}>
       <div className="main-header--container container">
         <div className="main-header--desktop-items">
           {menu && menu.map((item, index) => {
             return (
               <a 
                 key={index}
-                className="main-header--desktop-items__link" 
+                className={clsx("main-header--desktop-items__link", activeLink === item.uri && 'active')}
                 href={item.uri}
               >
                 {item.name}
@@ -43,7 +48,7 @@ const Header = () => {
               return (
                 <a 
                   key={index}
-                  className="main-header--hamburger__items-link" 
+                  className={clsx('main-header--hamburger__items-link', activeLink === item.uri && 'active')}                  
                   href={item.uri}
                 >
                   {item.name}

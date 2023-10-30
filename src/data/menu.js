@@ -5,14 +5,17 @@ import SvgLinkedin from '@assets/svg/icons/icon-linkedin.svg';
 
 export const menu = [
     {
+        slug: 'blog',
         name: 'Blog', 
         uri: '/blog',
     }, 
     {
+        slug: 'works',
         name: 'Works',
         uri: '/works',
     }, 
     {
+        slug: 'contact',
         name: 'Contact',  
         uri: '/contact'
     }

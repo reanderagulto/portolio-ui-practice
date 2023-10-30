@@ -13,7 +13,7 @@ const ListItem = ({props}) => {
           {props.title}
         </h3>
         <div className="list-item--subtitle">
-          {props.year && <span class="list-item--date-circular">{props.year}</span>}
+          {props.year && <span className="list-item--date-circular">{props.year}</span>}
           {props.fullDate && <span className="list-item--date-normal">{props.fullDate}</span>}
           <div className="list-item--categories">{props.categories.join(', ')}</div>
         </div>
